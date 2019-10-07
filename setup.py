@@ -29,7 +29,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'object_detector = py_roomba_adapter_ros2.object_detector:main'
+            'roomba_node = py_roomba_adapter_ros2.roomba_node:main'
         ],
     },
 )

@@ -8,11 +8,14 @@ from rclpy.node import Node
 from rclpy.parameter import Parameter
 from std_msgs.msg import String
 
+from pyroombaadapter import PyRoombaAdapter
+
 class RoombaNode(Node):
     def __init__(self):
+        print('Roomba node!')
         super().__init__('roomba_node')
 
-    def _callback(self, msg):
+    def twist_callback(self, msg):
         print('callback')
 
 def main(args=None):
