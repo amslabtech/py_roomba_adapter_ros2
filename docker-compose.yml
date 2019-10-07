@@ -1,0 +1,7 @@
+version: '2'
+services:
+  master:
+    build: ./docker
+    volumes:
+      - ".:/root/ros2_ws/src/this_repository"
+    container_name: py_roomba_adapter_ros2_container

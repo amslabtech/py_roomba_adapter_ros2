@@ -1,0 +1,4 @@
+input_image_topic: /usb_cam/image_raw
+detection_image_topic: /detection_image
+bounding_boxes_topic: /bounding_boxes
+confidence_threshold: 0.3
